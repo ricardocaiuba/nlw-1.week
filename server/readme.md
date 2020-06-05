@@ -14,5 +14,12 @@
 **Query param**: Parâmetros que vem na própria rota geralmente opcionais para filtros, paginação
 **request Body**: Corpo com os dados para atualização e ou criação.
 
-Select * From users Where name = 'Ricardo' ;
-knex("users").where("name", "Diego").select("*") ;
+Select _ From users Where name = 'Ricardo' ;
+knex("users").where("name", "Diego").select("_") ;
+
+---
+
+**Comando para rodar a migration**
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+
+**Comando para rodar seed**
